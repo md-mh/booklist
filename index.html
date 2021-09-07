@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Css  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="style.css">
+    <title>Books List</title>
+</head>
+<body>
+
+    <div class="booklist">
+        <h2 class="text-info"> Add Book </h2>
+        <p id="error" class="text-danger"></p>
+        <form action="#">
+
+            <div class="mb-3">
+                <label for="">Book Title:</label>
+                <input id="bname" type="text" placeholder="Book Name" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="">Author Name:</label>
+                <input id="author" type="text" placeholder="Author Name" class="form-control">
+            </div>
+
+
+            <div class="mb-3">
+                <label for="">Year:</label>
+                <input id="year" type="text" placeholder="Published Year" class="form-control">
+            </div>
+
+            <div class="mb-3">
+               <input id="submit" type="submit" value="ADD BOOK" class="form-control btn btn-primary">
+            </div>
+            
+
+
+        </form> <br>
+
+        <div class="showBookTable">
+            <h2 class="text-success"> Book List </h2>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Book Name</th>
+                        <th>Author Name</th>
+                        <th>Publish Year</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+
+                <tbody id="showBooks">
+
+                    <p onclick="myFunction()" id="r">Remove</p>
+                </tbody>
+
+
+            </table>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- Bootstrap Bundle Js   -->
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Js File  -->
+
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+body{
+    font-family: 'Rajdhani', sans-serif;   
+}
+h2{
+   text-align: center;
+   text-decoration: underline;
+}
+.booklist{
+    width: 70%;
+    margin: 30px auto;
+    box-shadow: 0 0 10px #ccc;
+    padding: 30px;
+    border-radius:2px;
+}
+#r{
+    display: none;
+}
